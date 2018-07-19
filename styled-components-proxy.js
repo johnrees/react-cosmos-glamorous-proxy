@@ -1,6 +1,6 @@
-import React from "react";
-import { proxyPropTypes } from "react-cosmos-shared/lib/react";
-import { ThemeProvider } from "styled-components";
+const React = require("react");
+const { proxyPropTypes } = require("react-cosmos-shared/lib/react");
+const { ThemeProvider } = require("styled-components");
 
 const defaults = {
   theme: {}
@@ -24,4 +24,4 @@ const createStyledComponentsProxy = options => {
   return StyledComponentsProxy;
 };
 
-export default StyledComponentsProxy;
+module.exports = createStyledComponentsProxy;

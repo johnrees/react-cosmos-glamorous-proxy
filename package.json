@@ -1,6 +1,6 @@
 {
   "name": "react-cosmos-styled-components-proxy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A proxy for react-cosmos to load styled-components themes.",
   "main": "styled-components-proxy.js",
   "repository": "https://github.com/johnrees/react-cosmos-styled-components-proxy",
