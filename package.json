@@ -1,14 +1,14 @@
 {
-  "name": "react-cosmos-glamorous-proxy",
+  "name": "react-cosmos-styled-components-proxy",
   "version": "1.0.0",
-  "description": "A simple proxy for react-cosmos to load glamorous themes.",
-  "main": "glamorous-proxy.js",
-  "repository": "git@github.com:alp82/react-cosmos-glamorous-proxy.git",
-  "author": "Alper Ortac <alportac@gmail.com>",
+  "description": "A proxy for react-cosmos to load styled-components themes.",
+  "main": "styled-components-proxy.js",
+  "repository": "https://github.com/johnrees/react-cosmos-styled-components-proxy",
+  "author": "John Rees <john@bitsushi.com>",
   "license": "MIT",
   "peerDependencies": {
-    "glamorous": "^4.11.0",
     "react": "^16.1.0",
-    "react-cosmos-shared": "^3.0.0-beta.3"
+    "react-cosmos-shared": "^3.0.0-beta.3",
+    "styled-components": "^3.3.3"
   }
 }

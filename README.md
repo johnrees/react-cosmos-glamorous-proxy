@@ -1,27 +1,33 @@
-# react-cosmos-glamorous-proxy
-A simple proxy for [react-cosmos](https://github.com/react-cosmos/react-cosmos) to load [glamorous](https://github.com/paypal/glamorous) themes.
+# react-cosmos-styled-components-proxy
 
-It's basically wrapping your components with a [`ThemeProvider`](https://glamorous.rocks/advanced#theming).
+A simple proxy for [react-cosmos](https://github.com/react-cosmos/react-cosmos) to load [styled-components](https://github.com/styled-components/styled-components) themes.
+
+It's basically wrapping your components with a [`ThemeProvider`](https://www.styled-components.com/docs/advanced#theming).
+
+Forked from [react-cosmos-glamorous-proxy](https://github.com/alp82/react-cosmos-glamorous-proxy)
 
 ## Getting started
+
 Be sure to have all needed peer dependencies installed.
 
-Import `glamorous-proxy` and create a new proxy instance with your theme:
-```js
-// config/cosmos/glamorous-proxy.js
-import myTheme from 'theme/myTheme';
+Import `styled-components-proxy` and create a new proxy instance with your theme:
 
-const GlamorousProxy = createGlamorousProxy({
-  theme: myTheme,
+```js
+// config/cosmos/styled-components-proxy.js
+import myTheme from "theme/myTheme";
+
+const StyledComponentsProxy = createStyledComponentsProxy({
+  theme: myTheme
 });
 
-export default GlamorousProxy;
+export default StyledComponentsProxy;
 ```
 
 Use this instance in your proxy config:
+
 ```js
 // cosmos.proxies.js
-import glamorousProxy from 'config/cosmos/glamorous-proxy';
+import styledComponentsProxy from "config/cosmos/styled-components-proxy";
 
-export default [glamorousProxy];
+export default [styledComponentsProxy];
 ```
