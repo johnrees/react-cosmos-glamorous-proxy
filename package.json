@@ -1,6 +1,6 @@
 {
   "name": "react-cosmos-styled-components-proxy",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A proxy for react-cosmos to load styled-components themes.",
   "main": "styled-components-proxy.js",
   "repository": "https://github.com/johnrees/react-cosmos-styled-components-proxy",
@@ -8,7 +8,11 @@
   "license": "MIT",
   "peerDependencies": {
     "react": "^16.1.0",
-    "react-cosmos-shared": "^3.0.0-beta.3",
     "styled-components": "^3.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle watch"
   }
 }

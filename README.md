@@ -13,13 +13,13 @@ Be sure to have all needed peer dependencies installed.
 Import `styled-components-proxy` and create a new proxy instance with your theme:
 
 ```js
-// cosmos.proxies.js
-const createStyledComponentsProxy = require("react-cosmos-styled-components-proxy");
-const theme = require("theme/myTheme");
+// src/cosmos.proxies.js
+import createStyledComponentsProxy from "react-cosmos-styled-components-proxy";
+import theme from "theme/myTheme";
 
 const styledComponentsProxy = createStyledComponentsProxy({
   theme
 });
 
-module.exports = [styledComponentsProxy];
+export default  = [styledComponentsProxy];
 ```
